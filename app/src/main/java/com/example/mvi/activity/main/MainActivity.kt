@@ -80,6 +80,7 @@ class MainActivity : AppCompatActivity() {
                         Log.d("MainActivity", "${it.posts}")
 
                         intentAllPosts()
+
                     }
                     is MainState.Error -> Log.d("MainActivity", "DeletePost"+ it.error)
                 }
